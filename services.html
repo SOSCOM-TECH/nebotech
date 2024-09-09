@@ -25,15 +25,51 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
  
-  <link rel="stylesheet" href="carousel/css/owl.carousel.min.css">
+ 
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="carousel/css/bootstrap.min.css"> -->
     
     <!-- Style -->
-    <link rel="stylesheet" href="carousel/css/style.css">
+  
  <!-- Main CSS File -->
  <link href="assets/css/main.css" rel="stylesheet">
+ <style>
+    /* Full-screen section with the image */
+    .hero-section {
+      position: relative;
+      height: 85vh; /* Full viewport height */
+      background: url('assets/img/aboutnebo.jpg') no-repeat center center/cover;
+    }
+
+    /* Dark overlay */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with transparency */
+      z-index: 1;
+    }
+
+    /* Text overlay */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  </style>
 
 </head>
 
@@ -48,122 +84,144 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="services.html">All</a></li>
-              <li><a href="ai.html">Artificial intelligence</a></li>
-              <li><a href="cyber.html">Cybersecurity</a></li>
-              <li><a href="hcd.html">HCD</a></li>
-              <li><a href="project.html">Project Management</a></li>
-            </ul>
-          </li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="partner.html">Partners</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="services.html">All</a></li>
+                <li><a href="ai.html">Artificial intelligence</a></li>
+                <li><a href="cyber.html">Cybersecurity</a></li>
+                <li><a href="hcd.html">HCD</a></li>
+                <li><a href="project.html">Project Management</a></li>
+              </ul>
+            </li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="partner.html">Partners</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
     </div>
+ 
   </header>
+     <!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-text">
+      <h1 style="color: white;">Our services</h1>
+    </div>
+  </div>
+  <div class="container my-5">
+        <div class="container section-title" data-aos="fade-up">
+            <center><h2>Who We Are</h2></center>
+            <p>
+            Welcome to our company! We are a team of passionate individuals dedicated to building impactful websites that make a lasting impression. With a focus on creativity, innovation, and user-centered design, we strive to bring your vision to life through functional and aesthetically pleasing digital solutions.
+            </p>
+            <p>
+            Our mission is to help businesses grow by offering tailored website designs and cutting-edge technologies. We pride ourselves on providing excellent service and creating products that are not only beautiful but also effective in achieving business goals. Whether you're looking to build a new site or revamp an existing one, we're here to help every step of the way.
+            </p>
+        </div>
+   </div>
+   <!-- Team Section -->
+   <section id="team" class="team section">
+   <!-- Section Title -->
+   <div class="container section-title" data-aos="fade-up">
+    <h2>services</h2>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  </div><!-- End Section Title -->
+
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Sarah Jhonson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+   <!-- <div class="container my-5">
+    <div class="container section-title" data-aos="fade-up">
+        <center><h2>Our team</h2></center>
+        
+    </div>
+</div> -->
+
+
 
   <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-up">
-            <h2>CREATING WEBSITES THAT MAKE YOU STOP &amp; STARE</h2>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-              <a href="#about" class="cta-btn">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
-          </div>
-
-          <div class="col-lg-6 ps-lg-4 content d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
-            <h3>About Us</h3>
-            <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-            </p>
-            <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-              <a href="services.html" class="btn btn-primary" style="background-color: #181160;">Learn more</a>
-            </div>
-             
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-   
-    <!-- Partners Section -->
-    <section id="services" class="services section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Partners</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-     
-        <div class="site-section bg-left-half mb-5">
-          <div class="container owl-2-style">
-            <div class="owl-carousel owl-2">
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_1.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-              </div>
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Beatae Doloribu</a></h3>
-              </div>
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Accusantium Eius Soluta</a></h3>
-              </div>
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_4.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Consectetur Adipisicing Elit</a></h3>
-              </div>
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_5.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Beatae Doloribu</a></h3>
-              </div>
-              <div class="media-29101">
-                <a href="#"><img src="carousel/images/img_6.jpg" alt="Image" class="img-fluid"></a>
-                <h3><a href="#">Accusantium Eius Soluta</a></h3>
-              </div>
-            </div>
-    
-          </div>
-        </div>
-    
-  
-    </section><!-- /Partners Section -->
-
-   
-    
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -310,12 +368,7 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
-  <!-- carousel script -->
-  <script src="carousel/js/jquery-3.3.1.min.js"></script>
-  <script src="carousel/js/popper.min.js"></script>
-  <script src="carousel/js/bootstrap.min.js"></script>
-  <script src="carousel/js/owl.carousel.min.js"></script>
-  <script src="carousel/js/main.js"></script>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
