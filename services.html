@@ -35,41 +35,83 @@
  <!-- Main CSS File -->
  <link href="assets/css/main.css" rel="stylesheet">
  <style>
-    /* Full-screen section with the image */
+  /* Full-screen section with the image */
+  .hero-section {
+    position: relative;
+    height: 85vh; /* Full viewport height */
+    background: url('assets/img/aboutnebo.jpg') no-repeat center center/cover;
+  }
+
+  /* Dark overlay */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with transparency */
+    z-index: 1;
+  }
+
+  /* Text overlay */
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
     .hero-section {
-      position: relative;
-      height: 85vh; /* Full viewport height */
-      background: url('assets/img/aboutnebo.jpg') no-repeat center center/cover;
+      height: 75vh; /* Adjust height for smaller screens */
     }
-
-    /* Dark overlay */
-    .hero-section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with transparency */
-      z-index: 1;
-    }
-
-    /* Text overlay */
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      color: white;
-      text-align: center;
-    }
-
     .hero-text h1 {
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 3.5rem; /* Slightly reduce heading size */
     }
-  </style>
+  }
+
+  @media (max-width: 992px) {
+    .hero-section {
+      height: 70vh; /* Further reduce height */
+    }
+    .hero-text h1 {
+      font-size: 3rem; /* Adjust font size */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 60vh; /* Reduce height for tablets */
+      background-position: center top; /* Adjust background position */
+    }
+    .hero-text h1 {
+      font-size: 2.5rem; /* Further reduce heading size */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-section {
+      height: 50vh; /* Smaller height for mobile */
+      background-position: center top;
+    }
+    .hero-text {
+      top: 40%; /* Move text higher to ensure visibility */
+    }
+    .hero-text h1 {
+      font-size: 2rem; /* Smaller font size for mobile screens */
+    }
+  }
+</style>
 
 </head>
 
@@ -110,17 +152,6 @@
       <h1 style="color: white;">Our services</h1>
     </div>
   </div>
-  <div class="container my-5">
-        <div class="container section-title" data-aos="fade-up">
-            <center><h2>Who We Are</h2></center>
-            <p>
-            Welcome to our company! We are a team of passionate individuals dedicated to building impactful websites that make a lasting impression. With a focus on creativity, innovation, and user-centered design, we strive to bring your vision to life through functional and aesthetically pleasing digital solutions.
-            </p>
-            <p>
-            Our mission is to help businesses grow by offering tailored website designs and cutting-edge technologies. We pride ourselves on providing excellent service and creating products that are not only beautiful but also effective in achieving business goals. Whether you're looking to build a new site or revamp an existing one, we're here to help every step of the way.
-            </p>
-        </div>
-   </div>
    <!-- Team Section -->
    <section id="team" class="team section">
    <!-- Section Title -->
@@ -128,7 +159,7 @@
     <h2>services</h2>
     <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
   </div><!-- End Section Title -->
-
+ 
 
   <div class="container">
 
@@ -141,12 +172,6 @@
             <div class="member-info-content">
               <h4>Walter White</h4>
               <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
           </div>
         </div>
@@ -159,12 +184,7 @@
             <div class="member-info-content">
               <h4>Sarah Jhonson</h4>
               <span>Product Manager</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -177,12 +197,7 @@
             <div class="member-info-content">
               <h4>William Anderson</h4>
               <span>CTO</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -195,12 +210,7 @@
             <div class="member-info-content">
               <h4>Amanda Jepson</h4>
               <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+            
             </div>
           </div>
         </div>
