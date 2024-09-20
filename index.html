@@ -79,10 +79,10 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-up">
-                        <h2 class="text-white">CREATING WEBSITES THAT MAKE YOU STOP &amp; STARE</h2>
-                        <p class="text-white">We are team of talented designers making websites with Bootstrap</p>
+                        <h2 class="text-white">GADAFI LETS FINISH THIS WE ARE TAKING SO MUCH TIME</h2>
+                        <p class="text-white">We are team of talented designers making websites with B ootstrap</p>
                         <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-                            <a href="#about" class="bg-light p-3 text-bold" style="color: #181160;">Get Started</a>
+                            <a href="#about" class="bg-light p-3 " style="color: #181160;font-weight: bold;">Get Started</a>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
@@ -112,7 +112,7 @@
                             Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
                         </p>
                         <div class="d-flex mt-4 justify-content-center justify-content-md-start">
-                            <a href="services.html" class="btn btn-primary" style="background-color: #181160;">Learn more</a>
+                            <a href="#about" class="p-3 text-white" style="background: #181160;font-weight: bold;">Get Started</a>
                         </div>
                     </div>
 
@@ -126,7 +126,7 @@
 
 
         <!-- Partners Section -->
-        <section id="services" class="services section light-background">
+        <section id="services" class="services section bg-light">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Partners</h2>
@@ -202,11 +202,37 @@
                 </div>
                 <!-- End Google Maps -->
 
-                <div class="row gy-4">
-                    <center>
+                <div class="row gy-4 ">
 
-                    </center>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 bg-light p-5">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                </div>
+
+
+                                <button type="submit">Send Message</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Contact Form -->
+
+                    <div class="col-lg-6 px-5">
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
@@ -232,42 +258,25 @@
                                 <p>info@example.com</p>
                             </div>
                         </div>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+
+
                         <!-- End Info Item -->
 
                     </div>
-
-                    <div class="col-lg-6">
-                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
-
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                                </div>
-
-                                <div class="col-md-6 ">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                    <button type="submit">Send Message</button>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End Contact Form -->
 
                 </div>
 
@@ -329,8 +338,8 @@
             </div>
         </div>
 
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">NeboTech</strong> <span>All Rights Reserved</span></p>
+        <div class="container copyright text-center mt-4" style="background: #181160;">
+            <p class="text-white">© <span>Copyright</span> <strong class="px-1 sitename">NeboTech</strong> <span>All Rights Reserved</span></p>
         </div>
 
     </footer>
