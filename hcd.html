@@ -8,6 +8,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
+     <!-- carousel items -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+     <link href="carousel.css" rel="stylesheet">
+
     <!-- Favicons -->
     <!-- <link href="assets/img/favicon.png" rel="icon"> -->
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -151,8 +157,9 @@
                             <li><a href="management.html">Project Management</a></li>
                         </ul>
                     </li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="partner.html">Partners</a></li>
+                    <li>
+                        <a href="contacts.html" class="btn btn-sm px-2 py-1 small-button" style="background-color: #181160; color: white;">Contact Us</a>
+                    </li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -160,12 +167,68 @@
         </div>
 
     </header>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button></button> <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/LsTXqTNZ/1.jpg"> -->
+                <div class="image-container">
+                <img alt="..." class="d-block w-100" src="assets/img/filbert/ai.webp">
+                <div class="overlay"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Artificial intelligence</h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">leverage the full potential of artificial intelligence and unlock new growth opportunities.</p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s"><a href="ai.html">See more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/C1rx7Kyh/2.jpg"> -->
+                <div class="image-container">
+                    <img alt="..." class="d-block w-100" src="assets/img/filbert/cyber.jpeg">
+                    <div class="overlay"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="animated bounceInRight" style="animation-delay: 1s">Cybersecurity</h5>
+                        <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Contact us today for a consultation and learn how we can strengthen your security posture.
+
+                            .</p>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="cyber.html">See more</a></p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image-container">
+                <img alt="..." class="d-block w-100" src="assets/img/filbert/hcd33.jpeg">
+                <div class="overlay"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Human-Centered Design</h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Unlock the potential of Human-Centered Design and create products and services that are intuitive, accessible, and loved by users.</p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s"><a href="hcd.html">Apply Now</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image-container">
+                <img alt="..." class="d-block w-100" src="assets/img/filbert/mang.jpeg">
+                <div class="overlay"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Project Management</h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Unlock the potential of Human-Centered Design and create products and services that are intuitive, accessible, and loved by users.</p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s"><a href="management.html">Apply Now</a></p>
+                </div>
+            </div>
+        </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+    </div>
+
     <!-- Hero Section -->
-    <div class="hero-section">
+    <!-- <div class="hero-section">
         <div class="hero-text">
             <h1 style="color: white;">Human Centered Design</h1>
         </div>
-    </div>
+    </div> -->
     <section id="features" class="features section">
 
         <!-- Section Title -->
@@ -178,7 +241,7 @@
 
             <div class="row gy-4 align-items-center features-item">
                 <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-                    <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+                    <img src="assets/img/hcd1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
                     <h3>User Research & Insights</h3>
@@ -276,22 +339,23 @@
                 <div class="col-lg-2 col-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ai.html">Artificial intelligence</a></li>
+                        <li><a href="cyber.html">Cybersecurity</a></li>
+                        <li><a href="hcd.html">Human-Centered Design</a></li>
+                        <li><a href="management.html">Project Management</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="ai.html">Artificial intelligence</a></li>
+                        <li><a href="cyber.html">Cybersecurity</a></li>
+                        <li><a href="hcd.html">Human-Centered Design</a></li>
+                        <li><a href="management.html">Project Management</a></li>
                     </ul>
                 </div>
 
@@ -301,7 +365,7 @@
                     <p>New York, NY 535022</p>
                     <p>United States</p>
                     <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p><strong>Email:</strong> <span>info@nebo.co.tz</span></p>
                 </div>
 
             </div>
@@ -312,7 +376,6 @@
         </div>
 
     </footer>
-
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
