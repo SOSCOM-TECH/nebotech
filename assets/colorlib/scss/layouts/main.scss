@@ -171,11 +171,11 @@ input {
 .current {
     .title {
         .step-number {
-            background: $blue-color;
+            background: #181160-color;
             color: #fff;
         }
         .step-text {
-            color: $blue-color;
+            color: #181160-color;
         }
     }
 }
@@ -209,7 +209,7 @@ input {
                 width: 140px;
                 height: 50px;
                 color: #fff;
-                background: $blue-color;
+                background: #181160-color;
                 @extend display-flex;
                 @include align-items(center);
                 @include justify-content(center);
@@ -340,7 +340,7 @@ input.error {
         height: 0px;
     }
     .noUi-connect {
-        background: $blue-color;
+        background: #181160-color;
     }
     .noUi-connects {
         @include border-radius(0px);
@@ -356,7 +356,7 @@ input.error {
         // @include transform(translateX(-50%));
         // right: auto;
         right: -15px;
-        border: 1px solid $blue-color;
+        border: 1px solid #181160-color;
         border-radius: 0px;
         &:after, &:before {
             width: 0px;
@@ -367,7 +367,7 @@ input.error {
             border: none;
             background: transparent;
             font-size: 16px;
-            color: $blue-color;
+            color: #181160-color;
             padding: 0px;
         }
     }

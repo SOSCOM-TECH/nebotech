@@ -63,6 +63,6 @@ h2 {
       transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
       margin: 3px; }
     .owl-2-style .owl-dots .owl-dot.active span {
-      background: #007bff; }
+      background: #181160; }
     .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
       outline: none; }
