@@ -41,97 +41,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        /* Full-screen section with the image */
-        
-        .hero-section {
-            position: relative;
-            height: 60vh;
-            /* Full viewport height */
-            background: url('assets/img/filbert/cyber.jpeg') no-repeat center center/cover;
-        }
-        /* Dark overlay */
-        
-        .hero-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            /* Dark overlay with transparency */
-            z-index: 1;
-        }
-        /* Text overlay */
-        
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-text h1 {
-            font-size: 4rem;
-            font-weight: bold;
-        }
-        /* Responsive adjustments */
-        
-        @media (max-width: 1200px) {
-            .hero-section {
-                height: 75vh;
-                /* Adjust height for smaller screens */
-            }
-            .hero-text h1 {
-                font-size: 3.5rem;
-                /* Slightly reduce heading size */
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .hero-section {
-                height: 70vh;
-                /* Further reduce height */
-            }
-            .hero-text h1 {
-                font-size: 3rem;
-                /* Adjust font size */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                height: 60vh;
-                /* Reduce height for tablets */
-                background-position: center top;
-                /* Adjust background position */
-            }
-            .hero-text h1 {
-                font-size: 2.5rem;
-                /* Further reduce heading size */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-section {
-                height: 50vh;
-                /* Smaller height for mobile */
-                background-position: center top;
-            }
-            .hero-text {
-                top: 40%;
-                /* Move text higher to ensure visibility */
-            }
-            .hero-text h1 {
-                font-size: 2rem;
-                /* Smaller font size for mobile screens */
-            }
-        }
-    </style>
+   
 
 </head>
 
@@ -173,51 +83,17 @@
             <div class="carousel-item active">
                 <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/LsTXqTNZ/1.jpg"> -->
                 <div class="image-container">
-                <img alt="..." class="d-block w-100" src="assets/img/filbert/ai.webp">
+                <img alt="..." class="d-block w-100" src="assets/img/filbert/cyber.jpeg">
                 <div class="overlay"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Artificial intelligence</h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">leverage the full potential of artificial intelligence and unlock new growth opportunities.</p>
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Cybersecurity</h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Contact us today for a consultation and learn how we can strengthen your security posture.</p>
                  
                 </div>
             </div>
-            <div class="carousel-item">
-                <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/C1rx7Kyh/2.jpg"> -->
-                <div class="image-container">
-                    <img alt="..." class="d-block w-100" src="assets/img/filbert/cyber.jpeg">
-                    <div class="overlay"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h5 class="animated bounceInRight" style="animation-delay: 1s">Cybersecurity</h5>
-                        <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Contact us today for a consultation and learn how we can strengthen your security posture.
-
-                            .</p>
-                   
-                    </div>
-            </div>
-            <div class="carousel-item">
-                <div class="image-container">
-                <img alt="..." class="d-block w-100" src="assets/img/filbert/hcd33.jpeg">
-                <div class="overlay"></div>
-                </div>
-                <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Human-Centered Design</h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Unlock the potential of Human-Centered Design and create products and services that are intuitive, accessible, and loved by users.</p>
-                    <p class="animated bounceInRight" style="animation-delay: 3s"><a href="hcd.html">Apply Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="image-container">
-                <img alt="..." class="d-block w-100" src="assets/img/filbert/mang.jpeg">
-                <div class="overlay"></div>
-                </div>
-                <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Project Management</h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s; color: white;">Unlock the potential of Human-Centered Design and create products and services that are intuitive, accessible, and loved by users.</p>
-                    <p class="animated bounceInRight" style="animation-delay: 3s"><a href="management.html">Apply Now</a></p>
-                </div>
-            </div>
+      
+    
         </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
     </div>
 
