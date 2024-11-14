@@ -7,15 +7,27 @@
 .carousel-item {
 	height: 75vh;
 	min-height: 300px;
+	position: relative;
 }
 .carousel-caption {
-	bottom: 80px;
+	position: absolute; /* Position caption over the image */
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-15%, -50%); /* Adjust for perfect centering */
+    text-align: center; /* Ensure text is centered horizontally */
+    color: white; /* Ensure caption text is white */
+    z-index: 1; /* Make sure caption appears above image */
+    width: 100%; /* Optional: ensures it spans the width of the image */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column;
+    align-items: center; /* Horizontal center within flex */
+    justify-content: center; /* Vertical center within flex */ width: 100%; /* Optional: ensures it spans the width of the image */
 }
 .carousel-caption h5 {
 	font-size: 48px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 25px;
+	margin-top: 10px;
     color: #ffff;
 }
 .carousel-caption p {
