@@ -1681,6 +1681,12 @@ section,
   color: #007bff;
 }
 
+@media (max-width: 576px) {
+  .social-media {
+    display:none ;
+  }
+}
+
 .text-justify {
   text-align: justify;
 }
