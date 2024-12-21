@@ -1648,6 +1648,12 @@ section,
   font-size: 16px;
 }
 
+@media (max-width: 576px) {
+  .social-links {
+    display:none ;
+  }
+}
+
 .social-links a:hover {
   color: #007bff; /* Change color on hover */
 }
