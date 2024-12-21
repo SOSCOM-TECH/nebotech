@@ -33,112 +33,32 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <style>
-        /* Full-screen section with the image */
-        
-        .hero-section {
-            position: relative;
-            height: 60vh;
-            /* Full viewport height */
-            background: url("assets/img/aboutnebo.jpg") no-repeat center center/cover;
-        }
-        /* Dark overlay */
-        
-        .hero-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            /* Dark overlay with transparency */
-            z-index: 1;
-        }
-        /* Text overlay */
-        
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-text h1 {
-            font-size: 4rem;
-            font-weight: bold;
-        }
-        /* Responsive adjustments */
-        
-        @media (max-width: 1200px) {
-            .hero-section {
-                height: 75vh;
-                /* Adjust height for smaller screens */
-            }
-            .hero-text h1 {
-                font-size: 3.5rem;
-                /* Slightly reduce heading size */
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .hero-section {
-                height: 70vh;
-                /* Further reduce height */
-            }
-            .hero-text h1 {
-                font-size: 3rem;
-                /* Adjust font size */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                height: 60vh;
-                /* Reduce height for tablets */
-                background-position: center top;
-                /* Adjust background position */
-            }
-            .hero-text h1 {
-                font-size: 2.5rem;
-                /* Further reduce heading size */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-section {
-                height: 50vh;
-                /* Smaller height for mobile */
-                background-position: center top;
-            }
-            .hero-text {
-                top: 40%;
-                /* Move text higher to ensure visibility */
-            }
-            .hero-text h1 {
-                font-size: 2rem;
-                /* Smaller font size for mobile screens */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/custom.css">
+   
 </head>
 
 <body class="index-page">
 
     
-    <div class="top-bar d-flex justify-content-between align-items-center py-2 px-4 bg-light">
+     <div class="social-media">
+        <a href="#" class="bi bi-facebook"></a>
+        <a href="#" class="bi bi-instagram"></a>
+        <a href="#" class="bi bi-linkedin"></a>
+        <a href="#" class="bi bi-twitter"></a>
+        <a href="#" class="bi bi-whatsapp"></a>
+    </div>
+    
+    
+    <div class="top-bar d-flex justify-content-between align-items-center py-2 px-5" style="background-color: #343639;">
         <div class="contact-info">
-            <span><i class="bi bi-telephone-fill"></i>+255 7177 43350</span>
-            <span class="ms-3"><i class="bi bi-envelope-fill"></i> info@nebo.co.tz</span>
+            <span class="text-white"><i class="bi bi-telephone-fill text-white"></i>+255 7177 43350</span>
+            <span class="ms-3 text-white"><i class="bi bi-envelope-fill text-white"></i> info@nebo.co.tz</span>
         </div>
         <div class="social-links">
-            <a href="https://facebook.com" class="me-3"><i class="bi bi-facebook"></i></a>
-            <a href="https://twitter.com" class="me-3"><i class="bi bi-twitter"></i></a>
-       <a href="https://linkedin.com" class="me-3"><i class="bi bi-linkedin"></i></a>
-            <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+            <a href="" class="me-3"><i class="bi bi-facebook text-white"></i></a>
+            <a href="" class="me-3"><i class="bi bi-twitter text-white"></i></a>
+            <a href="" class="me-3"><i class="bi bi-linkedin text-white"></i></a>
+            <a href=""><i class="bi bi-instagram text-white"></i></a>
         </div>
     </div>
     <header id="header" class="header d-flex align-items-center sticky-top">
@@ -174,7 +94,7 @@
             <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button></button> <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active corousel-height">
                 <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/LsTXqTNZ/1.jpg"> -->
                 <div class="image-container">
                 <img alt="..." class="d-block w-100" src="assets/img/filbert/ai.webp">
@@ -187,7 +107,7 @@
                 </div>
             </div>
             
-            <div class="carousel-item">
+            <div class="carousel-item corousel-height">
                 <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/C1rx7Kyh/2.jpg"> -->
                 <div class="image-container">
                     <img alt="..." class="d-block w-100" src="assets/img/filbert/cyber.jpeg">
@@ -200,7 +120,7 @@
                             .</p>
                     </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item corousel-height">
                 <div class="image-container">
                 <img alt="..." class="d-block w-100" src="assets/img/filbert/hcd33.jpeg">
                 <div class="overlay"></div>
@@ -211,7 +131,7 @@
                    
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item corousel-height">
                 <div class="image-container">
                 <img alt="..." class="d-block w-100" src="assets/img/filbert/mang.jpeg">
                 <div class="overlay"></div>
@@ -234,40 +154,48 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="#ai" class="service-item rounded pt-3 text-decoration-none" style="background-image: url('assets/img/filbert/one.jpg'); background-size: cover; background-position: center; height: 300px;">
-                        <div class="p-4 text-center" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
-                            <i class="bi bi-hand-index flex-shrink-0" style="font-size: 40px; color: #181160;"></i>
-                            <h5>Artificial Intelligence</h5>
-                            <p>Embrace the AI revolution and collaborate with us to harness the full potential of artificial intelligence, creating innovative solutions that drive business growth.</p>
+                <div  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/filbert/one.jpg'); ">
+                    <a href="/ai.html" class="service-item  pt-3 text-decoration-none" >
+                        <div class="p-4 text-center">
+                            <i class="bi bi-hand-index flex-shrink-0" style="font-size: 80px; color: #ffffff;"></i>
+                            <h5 class="text-white my-3">Artificial Intelligence</h5>
+                            <p class="text-white">Embrace the AI revolution and collaborate with us to harness the full potential of artificial intelligence, creating innovative solutions that drive business growth.</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="#cybersecurity" class="service-item rounded pt-3 text-decoration-none" style="background-image: url('assets/img/filbert/cyber.jpeg'); background-size: cover; background-position: center; height: 300px;">
-                        <div class="p-4 text-center" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
-                            <i class="bi bi-shield-lock flex-shrink-0" style="font-size: 40px; color: #181160;"></i>
-                            <h5>Cybersecurity</h5>
-                            <p>Secure your business against potential threats. Engage our team to enhance your cybersecurity defenses and safeguard your valuable data and digital assets effectively.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/filbert/cyber.jpeg');  ">
+                    <a href="/cyber.html" class="service-item rounded pt-3 text-decoration-none" style="background-image: url('assets/img/filbert/cyber.jpeg'); background-size: cover; background-position: center; height: 300px;">
+                        <div class="p-4 text-center" >
+                            <i class="bi bi-shield-lock flex-shrink-0" style="font-size: 80px; color: #ffffff;"></i>
+                            <h5 class="text-white my-3">Cybersecurity</h5>
+                            <p class="text-white">Secure your business against potential threats. Engage our team to enhance your cybersecurity defenses and safeguard your valuable data and digital assets effectively.</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <a href="#human-centered-design" class="service-item rounded pt-3 text-decoration-none" style="background-image: url('assets/img/filbert/human.jpeg'); background-size: cover; background-position: center; height: 300px;">
-                        <div class="p-4 text-center" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
-                            <i class="bi bi-person-lines-fill flex-shrink-0" style="font-size: 40px; color: #181160;"></i>
-                            <h5>Human Centered Design</h5>
-                            <p>Transform your product development with Human-Centered Design principles, ensuring your offerings are user-friendly, accessible, and resonate well with your target audience.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/filbert/human.jpeg');">
+                    <a href="/hcd.html" class="service-item rounded pt-3 text-decoration-none">
+                        <div class="p-4 text-center" >
+                            <i class="bi bi-person-lines-fill flex-shrink-0" style="font-size: 80px; color: #ffffff;"></i>
+                            <h5 class="text-white my-3">Human Centered Design</h5>
+                            <p class="text-white">Transform your product development with Human-Centered Design principles, ensuring your offerings are user-friendly, accessible, and resonate well with your target audience.</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <a href="#project-management" class="service-item rounded pt-3 text-decoration-none" style="background-image: url('assets/img/filbert/mang.jpeg'); background-size: cover; background-position: center; height: 300px;">
-                        <div class="p-4 text-center" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 8px;">
-                            <i class="bi bi-clipboard-data flex-shrink-0" style="font-size: 40px; color: #181160;"></i>
-                            <h5>Project Management</h5>
-                            <p>Streamline your projects with our expert project management services. We ensure timely delivery, efficient resource allocation, and high-quality outcomes for your initiatives.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/img/filbert/mang.jpeg');">
+                    <a href="/management.html" class="service-item rounded pt-3 text-decoration-none" >
+                        <div class="p-4 text-center" >
+                            <i class="bi bi-clipboard-data flex-shrink-0" style="font-size: 80px; color: #ffffff;"></i>
+                            <h5 class="text-white my-3">Project Management</h5>
+                            <p class="text-white">Streamline your projects with our expert project management services. We ensure timely delivery, efficient resource allocation, and high-quality outcomes for your initiatives.</p>
                         </div>
                     </a>
+                </div>
                 </div>
             </div>
         </div>

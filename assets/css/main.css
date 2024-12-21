@@ -1633,7 +1633,7 @@ section,
 //top 
 
 .top-bar {
-  background-color: #f8f9fa; /* Light background */
+  background-color: #222222; /* Light background */
   font-size: 14px;          /* Smaller text */
   border-bottom: 1px solid #ddd; /* Optional border */
 }
@@ -1650,4 +1650,37 @@ section,
 
 .social-links a:hover {
   color: #007bff; /* Change color on hover */
+}
+
+.social-media {
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: linear-gradient(to bottom, #007bff, #181160);
+  border-radius: 8px 0 0 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styles */
+.social-media a {
+  margin: 8px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.text-justify {
+  text-align: justify;
 }
