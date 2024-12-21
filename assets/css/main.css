@@ -1658,7 +1658,7 @@ section,
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background: linear-gradient(to bottom, #007bff, #181160);
+  background: linear-gradient(to bottom, #18119f, #181160);
   border-radius: 8px 0 0 8px;
   padding: 20px;
   display: flex;
