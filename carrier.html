@@ -40,10 +40,18 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
       color: white;
-      padding: 20px 20px;
+      padding: 20px 40px;
       z-index: 1000;
+      box-sizing: border-box; /* Ensures padding doesn't overflow */
     }
-  </style>
+
+    @media (max-width: 576px) {
+      .bottom-bar {
+        display: none; /* Hide the bar on smaller screens */
+      }
+    }
+</style>
+
 </head>
 
 <body class="index-page">
@@ -148,7 +156,7 @@
                 <p><strong>Deadline:</strong> Applications due by January 10, 2025</p>
 
                 <div class="text-center mt-4">
-                    <a href="mailto:info@nebo.co.tz" class="btn btn-primary btn-lg">Apply Now</a>
+                    <a href="mailto:info@nebo.co.tz" class="btn btn-primary btn-lg apply-now">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -217,7 +225,7 @@
             Send your CV now and take the first step into an exciting journey!</p>
         </div>
         <div>
-            <a href="mailto:info@nebo.co.tz" class="btn btn-primary btn-lg">Apply Now</a>
+            <a href="mailto:info@nebo.co.tz" class="btn btn-primary">Apply Now</a>
         </div>
       </div>
 
