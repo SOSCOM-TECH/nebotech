@@ -8,19 +8,15 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-     <!-- carousel items -->
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-     <link href="carousel.css" rel="stylesheet">
-
     <!-- Favicons -->
     <!-- <link href="assets/img/favicon.png" rel="icon"> -->
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- carousel items -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.gstatic   .com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
@@ -32,113 +28,27 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
-
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="carousel/css/bootstrap.min.css"> -->
-
-    <!-- Style -->
-
-    <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        /* Full-screen section with the image */
-        
-        .hero-section {
-            position: relative;
-            height: 60vh;
-            /* Full viewport height */
-            background: url('assets/img/contact.jpg') no-repeat center center/cover;
-        }
-        /* Dark overlay */
-        
-        .hero-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            /* Dark overlay with transparency */
-            z-index: 1;
-        }
-        /* Text overlay */
-        
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-text h1 {
-            font-size: 4rem;
-            font-weight: bold;
-        }
-        /* Responsive adjustments */
-        
-        @media (max-width: 1200px) {
-            .hero-section {
-                height: 55vh;
-                /* Adjust height for smaller screens */
-            }
-            .hero-text h1 {
-                font-size: 3.5rem;
-                /* Slightly reduce heading size */
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .hero-section {
-                height: 55vh;
-                /* Further reduce height */
-            }
-            .hero-text h1 {
-                font-size: 3rem;
-                /* Adjust font size */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                height: 55vh;
-                /* Reduce height for tablets */
-                background-position: center top;
-                /* Adjust background position */
-            }
-            .hero-text h1 {
-                font-size: 2.5rem;
-                /* Further reduce heading size */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-section {
-                height: 50vh;
-                /* Smaller height for mobile */
-                background-position: center top;
-            }
-            .hero-text {
-                top: 40%;
-                /* Move text higher to ensure visibility */
-            }
-            .hero-text h1 {
-                font-size: 2rem;
-                /* Smaller font size for mobile screens */
-            }
-        }
-    </style>
 
+<link rel="stylesheet" href="assets/css/custom.css">
+    
+
+<style>
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      padding: 20px 20px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body class="index-page">
 
-    
-     <div class="social-media">
+    <div class="social-media">
         <a href="#" class="bi bi-facebook"></a>
         <a href="#" class="bi bi-instagram"></a>
         <a href="#" class="bi bi-linkedin"></a>
@@ -170,9 +80,9 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                    <li><a href="carrier.html">Carrier</a></li>
-                    <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="carrier.html" class="active">Carrier</a></li>
+                    <li class="dropdown"><a><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
                             <li><a href="services.html">All</a></li>
                             <li><a href="ai.html">Artificial intelligence</a></li>
@@ -181,7 +91,7 @@
                             <li><a href="management.html">Project Management</a></li>
                         </ul>
                     </li>
-                <li><a href="contacts.html" >Contact</a></li>
+                      <li><a href="contacts.html" >Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -189,76 +99,62 @@
         </div>
 
     </header>
-  
     <!-- Hero Section -->
-    <div class="hero-section" style="height: 400px;">
+    <div class="hero-section" style=" background: url('assets/images/hiring.jpeg') no-repeat center center/cover; height: 400px;">
         <div class="hero-text">
-            <h1 style="color: white;">Contact Us</h1>
+            <h1 style="color: white;">Job Opportunity</h1>
         </div>
-    </div> 
+    </div>
+    
 
-
-    <section id="features" class="features section">
-     
-        <div class="container text-center">
-            <h2 style="font-weight: 700;">Let's Get In Touch</h2>
-            <p>We offer the best services for businesses . Contact us for further explanation and appointments to help you through our offered services.</p>
+       <div class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="display-5 fw-bold">Cybersecurity Engineer</h1>
+            <p class="text-muted">Full-Time Position</p>
         </div>
-        <br>
- 
-         <!-- Contact Section -->
-         <section id="contact" class="contact section">
 
-            <div class="container border p-4">
-                <div class="row px-5">
-                    <div class="col-md-4">
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Address</h3>
-                                <p>Off Nyumbu Street, Plot No. 205, Block A, Mikocheni Area, Dar es salaam</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Call Us</h3>
-                                <p>+255 7177 43350</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                            <i class="bi bi-envelope flex-shrink-0"></i>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>info@nebo.co.tz</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <br><br><br>
+        <div class="p-5 shadow-lg">
            
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+                <p class="lead">We are seeking a talented Cybersecurity Engineer to join our team. If you're passionate about protecting systems and data, and have hands-on experience in the field of cybersecurity, this is the perfect opportunity for you.</p>
 
-                <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                        frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Key Responsibilities</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><i class="bi bi-check"></i> Monitor, investigate, and respond to security events and alerts to mitigate risks.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Develop and maintain anti-malware solutions for various environments.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Implement and manage security controls aligned with ISO 27001 standards.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Conduct risk assessments to identify and address vulnerabilities.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Perform penetration testing on new and existing systems using both automated and manual techniques.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Provide guidance on security design, verify security requirements, and test systems to ensure security standards are met.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Develop and implement advanced security test plans, scenarios, and scripts.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Produce detailed cybersecurity reports for stakeholders.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Organize and deliver technical and non-technical cybersecurity training sessions.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Stay up-to-date with the latest cybersecurity trends, threats, and countermeasures.</li>
+                </ul>
+
+                <h4>Minimum Requirements</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><i class="bi bi-check"></i>Minimum of 3 years experience as a Systems Administrator, Systems Engineer, or Network Engineer.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Bachelor's or Master's degree in ICT-related fields (Computer Science, Computer Engineering, Cybersecurity, etc).</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Experience with Azure, AWS, MSCE, CCNA, Security+, CEH, CISA, CISM, CISSP, or OSCP.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Exposure to industry standards: ISO27001, NIST, CIS, Mitre Attack, OWASP.</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Background in incident response plans (IRP) and disaster recovery (DR).</li>
+                    <li class="list-group-item"><i class="bi bi-check"></i>Contactable references required.</li>
+                </ul>
+
+                <h4>Salary and Application Process</h4>
+                <p><strong>Salary:</strong> Negotiable based on experience</p>
+                <p><strong>How to Apply:</strong> Send your CV to <a href="mailto:info@nebo.co.tz">info@nebo.co.tz</a></p>
+                <p><strong>Deadline:</strong> Applications due by January 10, 2025</p>
+
+                <div class="text-center mt-4">
+                    <a href="mailto:info@nebo.co.tz" class="btn btn-primary btn-lg">Apply Now</a>
                 </div>
-
             </div>
+        </div>
+    </div>
 
-        </section>
-        <!-- /Contact Section -->
-      
-    
-
-    </section>
-    
+ 
     <footer id="footer" class="footer">
 
         <div class="container footer-top">
@@ -313,6 +209,18 @@
         </div>
 
     </footer>
+
+
+    <div class="bottom-bar d-flex justify-content-between align-items-center">
+        <div class="text-start">
+          <p class="mb-0">  Join us as a Cybersecurity Engineer to our team. 
+            Send your CV now and take the first step into an exciting journey!</p>
+        </div>
+        <div>
+            <a href="mailto:info@nebo.co.tz" class="btn btn-primary btn-lg">Apply Now</a>
+        </div>
+      </div>
+
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -332,6 +240,8 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    
 
 </body>
 
